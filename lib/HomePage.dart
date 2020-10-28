@@ -6,6 +6,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       backgroundColor: Colors.red,
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -24,6 +25,7 @@ class HomePage extends StatelessWidget {
       ),
       body: Column(
         children: <Widget>[
+
           20.heightBox,
           Heading().px16(),
           20.heightBox,
@@ -68,31 +70,31 @@ class MainCategory extends StatelessWidget {
               children: <Widget>[
                 10.heightBox,
 
-                Image.asset("assets/images/orange.png", scale: 50,),
-                "Orange".text.bold.red700.lg.make().centered()
+                Image.asset("assets/images/orange.png", height: context.isLandscape? 100:70),
+                "Orange".text.bold.red700.size(context.isLandscape ? 25 : 20).make().centered()
               ],
             )
-          ).height(context.screenHeight*0.15).roundedSM.width(context.screenWidth*0.35).roundedLg.white.make().centered(),
+          ).height(context.isLandscape? 150:120).roundedSM.width(context.screenWidth*0.35).roundedLg.white.make().centered(),
           VxBox(
               child: Column(
                 children: <Widget>[
                   10.heightBox,
 
-                  Image.asset("assets/images/kiwi.png", scale: 50,),
-                  "Kiwi".text.bold.red700.lg.make().centered()
+                  Image.asset("assets/images/kiwi.png", height: context.isLandscape? 100:70),
+                  "Kiwi".text.bold.red700.size(context.isLandscape ? 25 : 20).make().centered()
                 ],
               )
-          ).height(context.screenHeight*0.15).roundedSM.width(context.screenWidth*0.35).roundedLg.white.make().centered().px16(),
+          ).height(context.isLandscape? 150:120).roundedSM.width(context.screenWidth*0.35).roundedLg.white.make().centered().px16(),
           VxBox(
               child: Column(
                 children: <Widget>[
                   10.heightBox,
 
-                  Image.asset("assets/images/melon.png", scale: 50,),
-                  "Melon".text.bold.red700.lg.make()
+                  Image.asset("assets/images/melon.png",  height: context.isLandscape? 100:70),
+                  "Melon".text.bold.red700.size(context.isLandscape ? 25 : 20).make()
                 ],
               )
-          ).height(context.screenHeight*0.15).roundedSM.width(context.screenWidth*0.35).roundedLg.white.make().centered(),
+          ).height(context.isLandscape? 150:120).roundedSM.width(context.screenWidth*0.35).roundedLg.white.make().centered(),
 
 
         ],
@@ -120,13 +122,13 @@ class Product extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
-                  "Straberry".text.xl2.make(),
-                  "high quality".text.xl.red300.make(),
-                  "\$ ${"4"}".text.xl2.bold.make()
+                  "Strawberry".text.size(context.isLandscape ? 30 : 22).make(),
+                  "high quality".text.size(context.isLandscape ? 25 : 20).red300.make(),
+                  "\$ ${"4"}".text.size(context.isLandscape ? 25 : 20).bold.make()
                 ],
               ),
               Container(
-                height: 70,
+                height: context.isLandscape? 90:70,
                 width: 80,
                 child: Icon(Icons.shopping_basket,color: Colors.white,),
                 decoration: BoxDecoration(
@@ -148,13 +150,13 @@ class Product extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
-                    "Straberry".text.xl2.make(),
-                    "high quality".text.xl.red300.make(),
-                    "\$ ${"4"}".text.xl2.bold.make()
+                    "purple Candy".text.size(context.isLandscape ? 30 : 22).make(),
+                    "high quality".text.size(context.isLandscape ? 25 : 20).red300.make(),
+                    "\$ ${"4"}".text.size(context.isLandscape ? 25 : 20).bold.make()
                   ],
                 ),
                 Container(
-                  height: 70,
+                  height: context.isLandscape? 90:70,
                   width: 80,
                   child: Icon(Icons.shopping_basket,color: Colors.white,),
                   decoration: BoxDecoration(
@@ -176,13 +178,13 @@ class Product extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
-                    "Straberry".text.xl2.make(),
-                    "high quality".text.xl.red300.make(),
-                    "\$ ${"4"}".text.xl2.bold.make()
+                    "Mint lady".text.size(context.isLandscape ? 30 : 22).make(),
+                    "high quality".text.size(context.isLandscape ? 25 : 20).red300.make(),
+                    "\$ ${"4"}".text.size(context.isLandscape ? 25 : 20).bold.make()
                   ],
                 ),
                 Container(
-                  height: 70,
+                  height: context.isLandscape? 90:70,
                   width: 80,
                   child: Icon(Icons.shopping_basket,color: Colors.white,),
                   decoration: BoxDecoration(
